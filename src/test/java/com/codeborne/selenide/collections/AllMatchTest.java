@@ -10,4 +10,10 @@ final class AllMatchTest {
     assertThat(new AllMatch("Peaceful", it -> it.getText().contains("Peace")))
       .hasToString("all elements to match [Peaceful] predicate");
   }
+
+  @Test
+  void testToString() {
+    assertThatNew(new AllMatch("Peaceful", it -> it.getText().contains("Peace")))
+      .hasToString("all elements to match [Peaceful] predicate");
+  }
 }

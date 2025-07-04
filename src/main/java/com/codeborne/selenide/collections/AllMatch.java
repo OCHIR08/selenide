@@ -15,7 +15,7 @@ public class AllMatch extends PredicateCollectionCondition {
   @Override
   public CheckResult check(Driver driver, List<WebElement> elements) {
     return new CheckResult(
-      !elements.isEmpty() && elements.stream().allMatch(predicate),
+      !elements.isEmpty() && elements.stream().allMatch(predicate), //  todo qwe ewew
       elements
     );
   }
